@@ -23,6 +23,13 @@
 		67A319CA18DBF0B300BE99D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319A518DBF0B300BE99D9 /* Foundation.framework */; };
 		67A319D218DBF0B300BE99D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67A319D018DBF0B300BE99D9 /* InfoPlist.strings */; };
 		67A319D518DBF0B300BE99D9 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A319D418DBF0B300BE99D9 /* CalculatorTests.m */; };
+		67A319F618DBF47900BE99D9 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A319F518DBF47900BE99D9 /* Calculator.m */; };
+		67A319F718DBF47900BE99D9 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A319F518DBF47900BE99D9 /* Calculator.m */; };
+		67A31A1418DC041A00BE99D9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319C718DBF0B300BE99D9 /* SenTestingKit.framework */; };
+		67A31A1518DC041A00BE99D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319A318DBF0B300BE99D9 /* UIKit.framework */; };
+		67A31A1618DC041A00BE99D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319A518DBF0B300BE99D9 /* Foundation.framework */; };
+		67A31A1C18DC041A00BE99D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67A31A1A18DC041A00BE99D9 /* InfoPlist.strings */; };
+		67A31A1F18DC041A00BE99D9 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A31A1E18DC041A00BE99D9 /* UnitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,14 @@
 		67A319D118DBF0B300BE99D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		67A319D318DBF0B300BE99D9 /* CalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorTests.h; sourceTree = "<group>"; };
 		67A319D418DBF0B300BE99D9 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		67A319F418DBF47900BE99D9 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		67A319F518DBF47900BE99D9 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		67A31A1318DC041A00BE99D9 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67A31A1918DC041A00BE99D9 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		67A31A1B18DC041A00BE99D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		67A31A1D18DC041A00BE99D9 /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
+		67A31A1E18DC041A00BE99D9 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
+		67A31A2018DC041A00BE99D9 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67A31A0F18DC041A00BE99D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A31A1418DC041A00BE99D9 /* SenTestingKit.framework in Frameworks */,
+				67A31A1518DC041A00BE99D9 /* UIKit.framework in Frameworks */,
+				67A31A1618DC041A00BE99D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +114,7 @@
 			children = (
 				67A319A918DBF0B300BE99D9 /* Calculator */,
 				67A319CD18DBF0B300BE99D9 /* CalculatorTests */,
+				67A31A1718DC041A00BE99D9 /* UnitTests */,
 				67A319A218DBF0B300BE99D9 /* Frameworks */,
 				67A319A118DBF0B300BE99D9 /* Products */,
 			);
@@ -99,6 +125,7 @@
 			children = (
 				67A319A018DBF0B300BE99D9 /* Calculator.app */,
 				67A319C618DBF0B300BE99D9 /* CalculatorTests.octest */,
+				67A31A1318DC041A00BE99D9 /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +150,8 @@
 				67A319BC18DBF0B300BE99D9 /* JViewController.m */,
 				67A319BE18DBF0B300BE99D9 /* JViewController.xib */,
 				67A319AA18DBF0B300BE99D9 /* Supporting Files */,
+				67A319F418DBF47900BE99D9 /* Calculator.h */,
+				67A319F518DBF47900BE99D9 /* Calculator.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -156,6 +185,26 @@
 			children = (
 				67A319CF18DBF0B300BE99D9 /* CalculatorTests-Info.plist */,
 				67A319D018DBF0B300BE99D9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67A31A1718DC041A00BE99D9 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				67A31A1D18DC041A00BE99D9 /* UnitTests.h */,
+				67A31A1E18DC041A00BE99D9 /* UnitTests.m */,
+				67A31A1818DC041A00BE99D9 /* Supporting Files */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		67A31A1818DC041A00BE99D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67A31A1918DC041A00BE99D9 /* UnitTests-Info.plist */,
+				67A31A1A18DC041A00BE99D9 /* InfoPlist.strings */,
+				67A31A2018DC041A00BE99D9 /* UnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,6 +248,24 @@
 			productReference = 67A319C618DBF0B300BE99D9 /* CalculatorTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		67A31A1218DC041A00BE99D9 /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67A31A2118DC041A00BE99D9 /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				67A31A0E18DC041A00BE99D9 /* Sources */,
+				67A31A0F18DC041A00BE99D9 /* Frameworks */,
+				67A31A1018DC041A00BE99D9 /* Resources */,
+				67A31A1118DC041A00BE99D9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = 67A31A1318DC041A00BE99D9 /* UnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,6 +290,7 @@
 			targets = (
 				67A3199F18DBF0B300BE99D9 /* Calculator */,
 				67A319C518DBF0B300BE99D9 /* CalculatorTests */,
+				67A31A1218DC041A00BE99D9 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,10 +316,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		67A31A1018DC041A00BE99D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A31A1C18DC041A00BE99D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		67A319C418DBF0B300BE99D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		67A31A1118DC041A00BE99D9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -274,6 +363,7 @@
 				67A319B018DBF0B300BE99D9 /* main.m in Sources */,
 				67A319B418DBF0B300BE99D9 /* JAppDelegate.m in Sources */,
 				67A319BD18DBF0B300BE99D9 /* JViewController.m in Sources */,
+				67A319F618DBF47900BE99D9 /* Calculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +372,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A319D518DBF0B300BE99D9 /* CalculatorTests.m in Sources */,
+				67A319F718DBF47900BE99D9 /* Calculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A31A0E18DC041A00BE99D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67A31A1F18DC041A00BE99D9 /* UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +415,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				67A319D118DBF0B300BE99D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		67A31A1A18DC041A00BE99D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67A31A1B18DC041A00BE99D9 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -435,6 +542,36 @@
 			};
 			name = Release;
 		};
+		67A31A2218DC041A00BE99D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		67A31A2318DC041A00BE99D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
+				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,6 +597,14 @@
 			buildConfigurations = (
 				67A319DC18DBF0B300BE99D9 /* Debug */,
 				67A319DD18DBF0B300BE99D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		67A31A2118DC041A00BE99D9 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67A31A2218DC041A00BE99D9 /* Debug */,
+				67A31A2318DC041A00BE99D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

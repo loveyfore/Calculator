@@ -7,26 +7,39 @@
 //
 
 #import "CalculatorTests.h"
+#import "Calculator.h"
 
 @implementation CalculatorTests
 
-- (void)setUp
+- (void) setUp
 {
-    [super setUp];
-    
-    // Set-up code here.
+    calculator = [[Calculator alloc] init];
 }
 
-- (void)tearDown
+-(void)tearDown
 {
-    // Tear-down code here.
-    
-    [super tearDown];
+    //[calculator release];
 }
 
-- (void)testExample
+-(void)testAdd
 {
-    STFail(@"Unit tests are not implemented yet in CalculatorTests");
+    int expected = 11;
+    int result = [calculator add:5 to:6];
+    STAssertEquals(expected, result,
+                   @"We expected %d, but it was %d",expected,result);
 }
 
+-(void)testDivide
+{
+    float expected = 2.5;
+    float result = [calculator divide:5 by:2];
+    STAssertEquals(expected, result,
+                   @"We expected %f, but it was %f",expected,result);
+}
+
+-(void)testDivideByZero
+{
+    STAssertThrows([calculator divide:5 by:0],
+                   @"We expected an exception to be raised when dividing by 0");
+}
 @end

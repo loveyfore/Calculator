@@ -10,4 +10,7 @@
 
 @interface Calculator : NSObject
 
+-(int)add:(int)a to:(int)b;
+-(float)divide:(int)a by:(int)b;
+
 @end
