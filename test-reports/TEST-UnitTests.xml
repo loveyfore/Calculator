@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite errors="0" failures="1" hostname="jintekiMacBook-Pro.local" name="UnitTests" tests="1" time="0.0" timestamp="Fri Mar 21 20:18:58 +0800 2014"><testcase classname='UnitTests' name='testExample' time='0.0'>
+<failure message='Unit tests are not implemented yet in UnitTests' type='Failure'>/Users/jinyonghua/Projects/Calculator/UnitTests/UnitTests.m:29</failure>
+</testcase>
+</testsuite>

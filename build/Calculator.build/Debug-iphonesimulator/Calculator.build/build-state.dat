@@ -5,16 +5,16 @@ cCheck dependencies
 cProcessInfoPlistFile /Users/jinyonghua/Projects/Calculator/build/Debug-iphonesimulator/Calculator.app/Info.plist Calculator/Calculator-Info.plist
 cProcessPCH /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.Xcode.0/SharedPrecompiledHeaders/Calculator-Prefix-ateyftifhzadbcbwyuvmxbqftzjc/Calculator-Prefix.pch.pth Calculator/Calculator-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/i386/JAppDelegate.o /Users/jinyonghua/Projects/Calculator/Calculator/JAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/i386/Calculator.o /Users/jinyonghua/Projects/Calculator/Calculator/Calculator.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/i386/main.o /Users/jinyonghua/Projects/Calculator/Calculator/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/i386/JViewController.o /Users/jinyonghua/Projects/Calculator/Calculator/JViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/i386/Calculator.o /Users/jinyonghua/Projects/Calculator/Calculator/Calculator.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/jinyonghua/Projects/Calculator/build/Debug-iphonesimulator/Calculator.app/Calculator normal i386
 cGenerateDSYMFile /Users/jinyonghua/Projects/Calculator/build/Debug-iphonesimulator/Calculator.app.dSYM /Users/jinyonghua/Projects/Calculator/build/Debug-iphonesimulator/Calculator.app/Calculator
-cCopyStringsFile /Users/jinyonghua/Projects/Calculator/build/Debug-iphonesimulator/Calculator.app/en.lproj/InfoPlist.strings Calculator/en.lproj/InfoPlist.strings
 cCpResource Calculator/Default.png build/Debug-iphonesimulator/Calculator.app/Default.png
-cCpResource Calculator/Default-568h@2x.png build/Debug-iphonesimulator/Calculator.app/Default-568h@2x.png
-cCpResource Calculator/Default@2x.png build/Debug-iphonesimulator/Calculator.app/Default@2x.png
+cCopyStringsFile /Users/jinyonghua/Projects/Calculator/build/Debug-iphonesimulator/Calculator.app/en.lproj/InfoPlist.strings Calculator/en.lproj/InfoPlist.strings
 cCompileXIB /Users/jinyonghua/Projects/Calculator/Calculator/en.lproj/JViewController.xib
+cCpResource Calculator/Default@2x.png build/Debug-iphonesimulator/Calculator.app/Default@2x.png
+cCpResource Calculator/Default-568h@2x.png build/Debug-iphonesimulator/Calculator.app/Default-568h@2x.png
 cTouch /Users/jinyonghua/Projects/Calculator/build/Debug-iphonesimulator/Calculator.app
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
@@ -192,7 +192,7 @@ s1172
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies6b11f9f123dcb841^1f6805f223dcb841^---0#1#0#--18"Check dependencies36"C9C14CB9-057D-45B0-BF23-5280DEC2BD7D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciese485b0ea4cdcb841^3f8bbdea4cdcb841^---0#1#0#--18"Check dependencies36"7F41E195-BF38-431E-BF89-FBFF1E7CDF9D-
 
 CCompileC build/Calculator.build/Debug-iphonesimulator/Calculator.build/Objects-normal/i386/Calculator.o /Users/jinyonghua/Projects/Calculator/Calculator/Calculator.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s417078264.109125

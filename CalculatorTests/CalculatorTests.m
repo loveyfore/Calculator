@@ -28,7 +28,7 @@
     STAssertEquals(expected, result,
                    @"We expected %d, but it was %d",expected,result);
     
-    
+    NSLog(@"testAdd be tested!");
 }
 
 -(void)testDivide
