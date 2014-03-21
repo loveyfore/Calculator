@@ -27,6 +27,8 @@
     int result = [calculator add:5 to:6];
     STAssertEquals(expected, result,
                    @"We expected %d, but it was %d",expected,result);
+    
+    
 }
 
 -(void)testDivide

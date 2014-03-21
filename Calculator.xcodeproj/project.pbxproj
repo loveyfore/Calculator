@@ -337,8 +337,8 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+			shellPath = ruby;
+			shellScript = "if ENV['SL_RUN_UNIT_TESTS'] then\nlauncher_path = File.join(ENV['SRCROOT'], \"Scripts\", \"ios-sim\")\ntest_bundle_path= File.join(ENV['BUILT_PRODUCTS_DIR'], \"#{ENV['PRODUCT_NAME']}.#{ENV['WRAPPER_EXTENSION']}\")\n\nenvironment = {\n    'DYLD_INSERT_LIBRARIES' => \"/../../Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection\",\n    'XCInjectBundle' => test_bundle_path,\n    'XCInjectBundleInto' => ENV[\"TEST_HOST\"]\n}\n\nenvironment_args = environment.collect { |key, value| \"--setenv #{key}=\\\"#{value}\\\"\"}.join(\" \")\n\napp_test_host = File.dirname(ENV[\"TEST_HOST\"])\nsystem(\"#{launcher_path} launch \\\"#{app_test_host}\\\" #{environment_args} --args -SenTest All #{test_bundle_path}\")\nelse\nputs \"SL_RUN_UNIT_TESTS not set - Did not run unit tests!\"\nend\n";
 		};
 		67A31A1118DC041A00BE99D9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -520,6 +520,7 @@
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				INFOPLIST_FILE = "CalculatorTests/CalculatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -537,6 +538,7 @@
 				GCC_PREFIX_HEADER = "Calculator/Calculator-Prefix.pch";
 				INFOPLIST_FILE = "CalculatorTests/CalculatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
