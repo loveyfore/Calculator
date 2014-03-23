@@ -30,10 +30,18 @@
 		67A31A1618DC041A00BE99D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319A518DBF0B300BE99D9 /* Foundation.framework */; };
 		67A31A1C18DC041A00BE99D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 67A31A1A18DC041A00BE99D9 /* InfoPlist.strings */; };
 		67A31A1F18DC041A00BE99D9 /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A31A1E18DC041A00BE99D9 /* UnitTests.m */; };
+		67D23F9C18DEFA88007EC4B2 /* JWowUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 67D23F9B18DEFA88007EC4B2 /* JWowUtilsTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		67A319CB18DBF0B300BE99D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67A3199818DBF0B300BE99D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67A3199F18DBF0B300BE99D9;
+			remoteInfo = Calculator;
+		};
+		67D23F9D18DEFB3C007EC4B2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 67A3199818DBF0B300BE99D9 /* Project object */;
 			proxyType = 1;
@@ -73,6 +81,8 @@
 		67A31A1D18DC041A00BE99D9 /* UnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnitTests.h; sourceTree = "<group>"; };
 		67A31A1E18DC041A00BE99D9 /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
 		67A31A2018DC041A00BE99D9 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
+		67D23F9A18DEFA88007EC4B2 /* JWowUtilsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JWowUtilsTests.h; sourceTree = "<group>"; };
+		67D23F9B18DEFA88007EC4B2 /* JWowUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JWowUtilsTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +205,8 @@
 				67A31A1D18DC041A00BE99D9 /* UnitTests.h */,
 				67A31A1E18DC041A00BE99D9 /* UnitTests.m */,
 				67A31A1818DC041A00BE99D9 /* Supporting Files */,
+				67D23F9A18DEFA88007EC4B2 /* JWowUtilsTests.h */,
+				67D23F9B18DEFA88007EC4B2 /* JWowUtilsTests.m */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -260,6 +272,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				67D23F9E18DEFB3C007EC4B2 /* PBXTargetDependency */,
 			);
 			name = UnitTests;
 			productName = UnitTests;
@@ -381,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67A31A1F18DC041A00BE99D9 /* UnitTests.m in Sources */,
+				67D23F9C18DEFA88007EC4B2 /* JWowUtilsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = 67A3199F18DBF0B300BE99D9 /* Calculator */;
 			targetProxy = 67A319CB18DBF0B300BE99D9 /* PBXContainerItemProxy */;
+		};
+		67D23F9E18DEFB3C007EC4B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67A3199F18DBF0B300BE99D9 /* Calculator */;
+			targetProxy = 67D23F9D18DEFB3C007EC4B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -455,7 +474,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -479,7 +498,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -595,6 +614,7 @@
 				67A319DA18DBF0B300BE99D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67A319DB18DBF0B300BE99D9 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +623,7 @@
 				67A319DD18DBF0B300BE99D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67A31A2118DC041A00BE99D9 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +632,7 @@
 				67A31A2318DC041A00BE99D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
