@@ -26,7 +26,12 @@
 
 - (void)testExample
 {
-//ddd
+    int expected = 11;
+    int result = [calculator add:5 to:6];
+    STAssertEquals(expected, result,
+                   @"We expected %d, but it was %d",expected,result);
+    
+    NSLog(@"testAdd be tested!");
     
     
 }
