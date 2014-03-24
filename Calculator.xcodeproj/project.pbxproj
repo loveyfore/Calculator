@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6764972218E04FBB00341AE5 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 67A319F518DBF47900BE99D9 /* Calculator.m */; };
 		67A319A418DBF0B300BE99D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319A318DBF0B300BE99D9 /* UIKit.framework */; };
 		67A319A618DBF0B300BE99D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319A518DBF0B300BE99D9 /* Foundation.framework */; };
 		67A319A818DBF0B300BE99D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A319A718DBF0B300BE99D9 /* CoreGraphics.framework */; };
@@ -449,6 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6764972218E04FBB00341AE5 /* Calculator.m in Sources */,
 				67A31A1F18DC041A00BE99D9 /* UnitTests.m in Sources */,
 				67D23F9C18DEFA88007EC4B2 /* JWowUtilsTests.m in Sources */,
 			);
